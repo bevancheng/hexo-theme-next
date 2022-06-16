@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ config.language }}">
 <head>
+
+
   {{ partial('_partials/head/head.swig', {}, {cache: theme.cache.enable}) }}
   {% include '_partials/head/head-unique.swig' %}
   {{- next_inject('head') }}
@@ -10,6 +12,8 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
+<script type="text/javascript" src="/js/oh-my-diana.user.js"></script>
+
   <div class="container{%- if theme.motion.enable %} use-motion{%- endif %}">
     <div class="headband"></div>
 
